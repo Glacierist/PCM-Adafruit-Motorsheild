@@ -107,7 +107,7 @@ void processRemoteCommands(Positions pos) {
       
       } else if (pos.d > 0) {
         
-        Serial.println("up");
+        Serial.println("down");
         M1->setSpeed(200); 
         M1->run(BACKWARD);
         
@@ -122,7 +122,7 @@ void processRemoteCommands(Positions pos) {
         
       } else if (pos.l > 0) {
         
-        Serial.println("up");
+        Serial.println("left");
         M1->setSpeed(200); 
         M1->run(BACKWARD);
         
@@ -137,7 +137,7 @@ void processRemoteCommands(Positions pos) {
         
       } else if (pos.r > 0) {
         
-        Serial.println("up");
+        Serial.println("right");
         M1->setSpeed(200); 
         M1->run(FORWARD);
         

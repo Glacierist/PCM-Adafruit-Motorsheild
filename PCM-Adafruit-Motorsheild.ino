@@ -27,8 +27,9 @@ Adafruit_DCMotor *M4 = AFMS.getMotor(4);
 
 Positions positions = {0, 0, 0, 0, 0};
 Positions lastPosition;
-void setup()   /*----( SETUP: RUNS ONCE )----*/
-{
+
+void setup() {
+
   Serial.begin(115200);
 
   EIFR = (1 << INTF0);   //use before attachInterrupt(0,isr,xxxx) to clear interrupt 0 flag
